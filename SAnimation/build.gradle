@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdk 32
+    buildToolsVersion "33.0.0"
+    
+    namespace 'smith.lib.tools.animate'
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0.0"
+    }
+    
+    compileOptions {
+		sourceCompatibility JavaVersion.VERSION_11
+		targetCompatibility JavaVersion.VERSION_11
+	}
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+}
